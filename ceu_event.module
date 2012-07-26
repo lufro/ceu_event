@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CEU Event feature.
+ */
+
+include_once 'ceu_event.features.inc';
