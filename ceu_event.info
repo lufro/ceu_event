@@ -34,6 +34,7 @@ features[node][] = event
 features[taxonomy][] = academic_areas
 features[taxonomy][] = event_audience
 features[taxonomy][] = event_type
+features[variable][] = features_semaphore
 features[variable][] = menu_options_event
 features[variable][] = menu_parent_event
 features[variable][] = node_options_event
