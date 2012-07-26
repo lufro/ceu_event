@@ -118,6 +118,8 @@ function ceu_event_views_default_views() {
 
   /* Display: Teasers (page) */
   $handler = $view->new_display('page', 'Teasers (page)', 'page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Teasers';
   $handler->display->display_options['path'] = 'events';
 
   /* Display: Events List (pane) */
@@ -403,6 +405,7 @@ function ceu_event_views_default_views() {
   $handler->display->display_options['arguments']['date_argument']['title_enable'] = 1;
   $handler->display->display_options['arguments']['date_argument']['title'] = 'Year: %1';
   $handler->display->display_options['arguments']['date_argument']['default_argument_skip_url'] = 0;
+  $handler->display->display_options['arguments']['date_argument']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['date_argument']['year_range'] = '-10:+3';
   $handler->display->display_options['arguments']['date_argument']['granularity'] = 'year';
   $handler->display->display_options['arguments']['date_argument']['use_fromto'] = 'no';

@@ -10,7 +10,7 @@
 function ceu_event_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-event-body'
+  // Exported field: 'node-event-body'.
   $fields['node-event-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function ceu_event_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -88,7 +89,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_academic_areas'
+  // Exported field: 'node-event-field_academic_areas'.
   $fields['node-event-field_academic_areas'] = array(
     'field_config' => array(
       'active' => '1',
@@ -109,6 +110,7 @@ function ceu_event_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -164,7 +166,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_basic_file_file'
+  // Exported field: 'node-event-field_basic_file_file'.
   $fields['node-event-field_basic_file_file'] = array(
     'field_config' => array(
       'active' => '1',
@@ -185,6 +187,7 @@ function ceu_event_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -242,7 +245,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_basic_image_image'
+  // Exported field: 'node-event-field_basic_image_image'.
   $fields['node-event-field_basic_image_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -263,6 +266,7 @@ function ceu_event_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -327,7 +331,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_date'
+  // Exported field: 'node-event-field_date'.
   $fields['node-event-field_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -337,6 +341,7 @@ function ceu_event_field_default_fields() {
       'field_name' => 'field_date',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'cache_count' => '4',
@@ -415,7 +420,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_event_audience'
+  // Exported field: 'node-event-field_event_audience'.
   $fields['node-event-field_event_audience'] = array(
     'field_config' => array(
       'active' => '1',
@@ -436,6 +441,7 @@ function ceu_event_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -491,7 +497,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_event_type'
+  // Exported field: 'node-event-field_event_type'.
   $fields['node-event-field_event_type'] = array(
     'field_config' => array(
       'active' => '1',
@@ -512,6 +518,7 @@ function ceu_event_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -568,7 +575,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_organizer'
+  // Exported field: 'node-event-field_organizer'.
   $fields['node-event-field_organizer'] = array(
     'field_config' => array(
       'active' => '1',
@@ -578,6 +585,7 @@ function ceu_event_field_default_fields() {
       'field_name' => 'field_organizer',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -657,7 +665,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_presenter'
+  // Exported field: 'node-event-field_presenter'.
   $fields['node-event-field_presenter'] = array(
     'field_config' => array(
       'active' => '1',
@@ -667,6 +675,7 @@ function ceu_event_field_default_fields() {
       'field_name' => 'field_presenter',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -746,7 +755,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_related_links'
+  // Exported field: 'node-event-field_related_links'.
   $fields['node-event-field_related_links'] = array(
     'field_config' => array(
       'active' => '1',
@@ -756,6 +765,7 @@ function ceu_event_field_default_fields() {
       'field_name' => 'field_related_links',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -834,7 +844,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_tags'
+  // Exported field: 'node-event-field_tags'.
   $fields['node-event-field_tags'] = array(
     'field_config' => array(
       'active' => '1',
@@ -855,6 +865,7 @@ function ceu_event_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -913,7 +924,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_unit'
+  // Exported field: 'node-event-field_unit'.
   $fields['node-event-field_unit'] = array(
     'field_config' => array(
       'active' => '1',
@@ -923,6 +934,7 @@ function ceu_event_field_default_fields() {
       'field_name' => 'field_unit',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
