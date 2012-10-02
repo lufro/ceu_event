@@ -10,7 +10,7 @@
 function ceu_event_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-event-body'.
+  // Exported field: 'node-event-body'
   $fields['node-event-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,7 +33,6 @@ function ceu_event_field_default_fields() {
           0 => 'format',
         ),
       ),
-      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -84,12 +83,12 @@ function ceu_event_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '6',
+        'weight' => '8',
       ),
     ),
   );
 
-  // Exported field: 'node-event-field_academic_areas'.
+  // Exported field: 'node-event-field_academic_areas'
   $fields['node-event-field_academic_areas'] = array(
     'field_config' => array(
       'active' => '1',
@@ -110,7 +109,6 @@ function ceu_event_field_default_fields() {
           0 => 'tid',
         ),
       ),
-      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -166,11 +164,11 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_basic_file_file'.
+  // Exported field: 'node-event-field_basic_file_file'
   $fields['node-event-field_basic_file_file'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_basic_file_file',
@@ -187,7 +185,6 @@ function ceu_event_field_default_fields() {
           0 => 'fid',
         ),
       ),
-      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -240,98 +237,12 @@ function ceu_event_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'file_generic',
-        'weight' => '8',
+        'weight' => '10',
       ),
     ),
   );
 
-  // Exported field: 'node-event-field_basic_image_image'.
-  $fields['node-event-field_basic_image_image'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_basic_image_image',
-      'foreign keys' => array(
-        'fid' => array(
-          'columns' => array(
-            'fid' => 'fid',
-          ),
-          'table' => 'file_managed',
-        ),
-      ),
-      'indexes' => array(
-        'fid' => array(
-          0 => 'fid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'image',
-      'settings' => array(
-        'default_image' => 0,
-        'uri_scheme' => 'public',
-      ),
-      'translatable' => '0',
-      'type' => 'image',
-    ),
-    'field_instance' => array(
-      'bundle' => 'event',
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => '',
-          ),
-          'type' => 'image',
-          'weight' => '0',
-        ),
-        'featured' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_basic_image_image',
-      'label' => 'Image',
-      'required' => 0,
-      'settings' => array(
-        'alt_field' => 0,
-        'default_image' => 0,
-        'file_directory' => '',
-        'file_extensions' => 'png gif jpg jpeg',
-        'max_filesize' => '',
-        'max_resolution' => '',
-        'min_resolution' => '',
-        'title_field' => 0,
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'image',
-        'settings' => array(
-          'preview_image_style' => 'thumbnail',
-          'progress_indicator' => 'throbber',
-        ),
-        'type' => 'image_image',
-        'weight' => '3',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-event-field_date'.
+  // Exported field: 'node-event-field_date'
   $fields['node-event-field_date'] = array(
     'field_config' => array(
       'active' => '1',
@@ -341,7 +252,6 @@ function ceu_event_field_default_fields() {
       'field_name' => 'field_date',
       'foreign keys' => array(),
       'indexes' => array(),
-      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'cache_count' => '4',
@@ -415,12 +325,12 @@ function ceu_event_field_default_fields() {
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
-        'weight' => '2',
+        'weight' => '4',
       ),
     ),
   );
 
-  // Exported field: 'node-event-field_event_audience'.
+  // Exported field: 'node-event-field_event_audience'
   $fields['node-event-field_event_audience'] = array(
     'field_config' => array(
       'active' => '1',
@@ -441,7 +351,6 @@ function ceu_event_field_default_fields() {
           0 => 'tid',
         ),
       ),
-      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -492,12 +401,12 @@ function ceu_event_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '4',
+        'weight' => '6',
       ),
     ),
   );
 
-  // Exported field: 'node-event-field_event_type'.
+  // Exported field: 'node-event-field_event_type'
   $fields['node-event-field_event_type'] = array(
     'field_config' => array(
       'active' => '1',
@@ -518,7 +427,6 @@ function ceu_event_field_default_fields() {
           0 => 'tid',
         ),
       ),
-      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -570,12 +478,97 @@ function ceu_event_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
+        'weight' => '5',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-event-field_featured_image'
+  $fields['node-event-field_featured_image'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_featured_image',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'event',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => '',
+          ),
+          'type' => 'image',
+          'weight' => 12,
+        ),
+        'featured' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_featured_image',
+      'label' => 'Image',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
         'weight' => '3',
       ),
     ),
   );
 
-  // Exported field: 'node-event-field_organizer'.
+  // Exported field: 'node-event-field_organizer'
   $fields['node-event-field_organizer'] = array(
     'field_config' => array(
       'active' => '1',
@@ -585,7 +578,6 @@ function ceu_event_field_default_fields() {
       'field_name' => 'field_organizer',
       'foreign keys' => array(),
       'indexes' => array(),
-      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -660,12 +652,12 @@ function ceu_event_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '8',
+        'weight' => '11',
       ),
     ),
   );
 
-  // Exported field: 'node-event-field_presenter'.
+  // Exported field: 'node-event-field_presenter'
   $fields['node-event-field_presenter'] = array(
     'field_config' => array(
       'active' => '1',
@@ -675,7 +667,6 @@ function ceu_event_field_default_fields() {
       'field_name' => 'field_presenter',
       'foreign keys' => array(),
       'indexes' => array(),
-      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -750,12 +741,12 @@ function ceu_event_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '7',
+        'weight' => '9',
       ),
     ),
   );
 
-  // Exported field: 'node-event-field_related_links'.
+  // Exported field: 'node-event-field_related_links'
   $fields['node-event-field_related_links'] = array(
     'field_config' => array(
       'active' => '1',
@@ -765,7 +756,6 @@ function ceu_event_field_default_fields() {
       'field_name' => 'field_related_links',
       'foreign keys' => array(),
       'indexes' => array(),
-      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -844,7 +834,7 @@ function ceu_event_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-event-field_tags'.
+  // Exported field: 'node-event-field_tags'
   $fields['node-event-field_tags'] = array(
     'field_config' => array(
       'active' => '1',
@@ -865,7 +855,6 @@ function ceu_event_field_default_fields() {
           0 => 'tid',
         ),
       ),
-      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -919,22 +908,21 @@ function ceu_event_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'taxonomy_autocomplete',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
 
-  // Exported field: 'node-event-field_unit'.
+  // Exported field: 'node-event-field_unit'
   $fields['node-event-field_unit'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_unit',
       'foreign keys' => array(),
       'indexes' => array(),
-      'locked' => '0',
       'module' => 'link',
       'settings' => array(
         'attributes' => array(
@@ -1008,7 +996,7 @@ function ceu_event_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '4',
+        'weight' => '7',
       ),
     ),
   );
